@@ -59,6 +59,9 @@ docker compose up --build
 | Backend FastAPI     | API principale                  | [http://localhost:8000](http://localhost:8000)                 |
 | Backend Healthcheck | Vérification de l’état de l’API | [http://localhost:8000/health](http://localhost:8000/health)   |
 | Backend Metrics     | Métriques Prometheus            | [http://localhost:8000/metrics](http://localhost:8000/metrics) |
+| Prometheus          | Collecte des métriques          | [http://localhost:9090](http://localhost:9090)                 |
+| Grafana             | Visualisation des métriques     | [http://localhost:3000](http://localhost:3000)                 |
+| Uptime Kuma         | Monitoring de disponibilité     | [http://localhost:3001](http://localhost:3001)                 |
 
 ## Arrêt
 ```bash
