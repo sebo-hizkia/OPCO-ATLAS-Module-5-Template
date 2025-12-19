@@ -57,3 +57,13 @@ docker compose up --build
 Settings → Secrets and variables → Actions → New repository secret
 
 Créer un token Docker Hub : Account Settings -> Personnal access tokens
+
+## Monitoring & Supervision
+
+La solution est monitorée via une stack complète :
+- Prometheus collecte les métriques exposées par l’API FastAPI
+- Grafana visualise les métriques système via le dashboard 1860
+- Uptime Kuma vérifie la disponibilité de l’API (/health)
+- Un webhook Discord notifie automatiquement toute indisponibilité
+
+L’ensemble des services est orchestré via Docker Compose.
